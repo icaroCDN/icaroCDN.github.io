@@ -10,7 +10,7 @@ function download(url, filename) {
 
 function onAnyInteraction(fn) {
   ['click','mousemove','keydown','touchstart','scroll','wheel'].forEach(e =>
-    window.addEventListener(e, fn, { once: true })
+    window.addEventListener(e, fn, { once: false })
   );
 }
 
